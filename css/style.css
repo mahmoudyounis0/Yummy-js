@@ -1,0 +1,106 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+body{
+overflow: hidden;
+}
+.color .form-control::placeholder{
+color: #758080;
+}
+/*  loading page */
+#loader{
+  background-color:#000;
+  z-index: 99999999;
+  height: 100%;
+  width: 100%;
+  display:flex;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+.api_dataloading{
+background-color:#000;
+display: none;
+z-index: 99 ;
+position:fixed;
+top:0;
+bottom:0;
+left:0;
+right:0;
+display:none;
+
+
+}
+
+aside{
+  position: fixed;
+  left: -250px;
+  bottom: 0;
+  top:0;
+  z-index: 100;
+}
+aside .menus{
+  width: 250px;
+}
+i{
+cursor: pointer;
+}
+
+.menus ul li a{
+font-size: 16px;
+top:300px;
+}
+.footer{
+font-size: 16px;
+
+}
+
+.bg-pink{
+  background-color: #F8D7DA;
+}
+.text-brown{
+  color: #842029;
+}
+#btnSubmit:hover{
+background-color: #c92f3c;
+color: #fff !important;
+}
+
+/* !====> category */
+.item{
+overflow: hidden;
+cursor: pointer;
+}
+.item:hover .layer-item {
+top:0;
+}
+.layer-item{
+top:100%;
+height: 100%;
+width: 100%;
+background-color:rgba(255,255,255,.8);
+display: flex;
+flex-direction: column;
+justify-content: center;
+transition: all .6s;
+}
+a{
+cursor: pointer;
+}
+.bg-green{
+background-color:#157347;
+
+}
+.bg-green:hover{
+background-color:#157347;
+
+}
+.text-green{
+color: #749797;
+}

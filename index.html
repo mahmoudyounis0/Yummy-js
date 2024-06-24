@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <title>Yummy</title>
+</head>
+
+<body class="bg-black">
+    <!--  loading page -->
+    <div id="loader" class="justify-content-center align-items-center">
+           <span class="fa fa-spinner fa-spin fa-6x text-white"></span>
+    </div>
+    <!-- Aside bar -->
+
+    <aside class="min-vh-100 d-flex">
+        <div id="menus" class="menus d-flex flex-column justify-content-between p-4 text-white bg-black posf">
+            <ul class="list-unstyled">
+                <li class="pb-3"> <a class="text-decoration-none text-white position-relative" onclick="Search()">Search</a> </li>
+                <li class="pb-3"> <a class="text-decoration-none text-white position-relative "
+                        onclick='Category()'>Categories</a>
+                </li>
+                <li class="pb-3"> <a class="text-decoration-none text-white position-relative"
+                    onclick='Area()'>Area</a> </li>
+                <li class="pb-3"> <a class="text-decoration-none text-white position-relative" onclick='Ingredient()'>Ingredients</a>
+                </li>
+                <li class="pb-3"> <a class="text-decoration-none text-white position-relative" onclick="Contact()">Contact
+                        us</a>
+                </li>
+            </ul>
+            <!-- footer -->
+            <div class="footer">
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <p class=""> Copyright Â© 2019 All Rights </p>
+            </div>
+        </div>
+        <div class="aside-nav d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black m-0">
+            <img class="logo" src="images/logo.png" alt="logo" loading="lazy" width="50px">
+            <i class="fa-solid fa-bars fa-2x" id="bar-menus"></i>
+            <i class="fa-solid fa-close fa-2x d-none" id="bar-close"></i>
+            <div class="d-grid">
+                <i class="fa-solid fa-globe mb-2"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+
+    </aside>
+    <div class="container" id="rowInput"></div>
+
+    <section class="position-relative min-vh-100">
+        <div class="api_dataloading justify-content-center align-items-center">
+            <span class="fa fa-spinner fa-spin fa-6x text-white"></span>
+        </div>
+        <div class="position-relative">
+            <div class="container">
+                <div class="row g-4 my-5 d-flex" id="api_dataload_meals">
+ 
+
+
+                    
+                </div>
+            </div>
+        </div>
+    </section> 
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
